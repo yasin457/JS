@@ -43,7 +43,7 @@ const myFunction = function () {
     
 }
 
-console.log(typeof bigNumber);
+// console.log(typeof bigNumber);
 
 
 // Object (native and does not implement [[Call]]) → "object"
@@ -67,4 +67,34 @@ typeof sayHi; // "function"
 // Object (host and does not implement [[Call]]) → Implementation-defined
 
 typeof document; // "object"
-typeof alert;    // "function" (kyunki ye callable hai)
+typeof alert;    // "function" (Because its Callable)
+
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+// Stack (Primitive), Heap (Non-Primitive)
+
+let myYoutubename = "yasinkhan"
+
+
+let anothername = myYoutubename;
+anothername = "yasindev"
+// console.log(myYoutubename);
+// console.log(anothername);
+
+
+let userOne = {
+  email: "user@google.com",
+  payment: "user@jazzcash"
+}
+
+
+let userTwo = userOne
+
+userTwo.email = "user@yaho.com"
+
+
+console.log(userOne.email);
+console.log(userTwo.email);
